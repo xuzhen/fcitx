@@ -6,23 +6,29 @@
 # Alisha <alisha.4m@gmail.com>, 2012
 # Alisha <alisha.4m@gmail.com>, 2012
 # BrLi <rainman59118@gmail.com>, 2014
+# byStarTW (pan93412) <pan93412@gmail.com>, 2019
+# chenshijie-uos <chenshijie@uniontech.com>, 2020
+# csslayer <wengxt@gmail.com>, 2013,2015,2020
 # PHLin <Cypressyew@gmail.com>, 2017
+# fhoshino <fh@pinchia.com>, 2014,2017
 # fhoshino <fh@pinchia.com>, 2014,2017
 # Gerald Du <frozenmouse@gmail.com>, 2015
 # Hiunn-hué <hiunnhue108@ymail.com>, 2012-2013
 # Pellaeon Lin <nfsmwlin@gmail.com>, 2013
 # Pellaeon Lin <nfsmwlin@gmail.com>, 2013
-# csslayer <wengxt@gmail.com>, 2013,2015
+# PHLin <Cypressyew@gmail.com>, 2017
+# csslayer <wengxt@gmail.com>, 2013,2015,2020
 # csslayer <wengxt@gmail.com>, 2012-2013
 # csslayer <wengxt@gmail.com>, 2013
-# yyc1992 <yyc1992@gmail.com>, 2015
+# Yichao Yu <yyc1992@gmail.com>, 2015
+# Yichao Yu <yyc1992@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: fcitx\n"
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
-"POT-Creation-Date: 2017-11-25 00:02-0800\n"
-"PO-Revision-Date: 2017-11-24 17:19+0000\n"
-"Last-Translator: fhoshino <fh@pinchia.com>\n"
+"POT-Creation-Date: 2020-12-01 00:01+0100\n"
+"PO-Revision-Date: 2020-11-30 08:28+0000\n"
+"Last-Translator: chenshijie-uos <chenshijie@uniontech.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/fcitx/fcitx/"
 "language/zh_TW/)\n"
 "Language: zh_TW\n"
@@ -91,7 +97,7 @@ msgstr "/Note_for_GNOME_Later_than_3.6"
 msgid "/XIM"
 msgstr "/XIM"
 
-#: src/lib/fcitx/ime.c:1800
+#: src/lib/fcitx/ime.c:1803
 msgid "/min  Time Used: "
 msgstr "/分 經過時間："
 
@@ -159,7 +165,7 @@ msgstr "作用"
 
 #: src/ui/classic/skin.desc:387
 msgid "Active Menu Color"
-msgstr ""
+msgstr "使用中選單顏色"
 
 #: src/ui/classic/skin.desc:61
 msgid "Active Menu Item Character Color"
@@ -171,7 +177,7 @@ msgstr "使用中模式圖示"
 
 #: src/ui/classic/skin.desc:172
 msgid "Active Text Icon Color"
-msgstr ""
+msgstr "使用中文字圖示顏色"
 
 #: src/ui/classic/skin.desc:309
 msgid "Active Tray Icon"
@@ -458,7 +464,7 @@ msgstr "找不到 gtk ${1} 的 ${2}"
 
 #: data/script/fcitx-diagnose.sh:944
 msgid "Cannot find DBus name ${1} owner."
-msgstr ""
+msgstr "找不到 DBus 名稱 ${1} 的擁有者。"
 
 #: src/im/pinyin/py.c:393
 msgid "Cannot find System Database of Pinyin!"
@@ -516,7 +522,7 @@ msgstr "找不到 kimpanel dbus 介面或非 kimpanel 使用者介面。"
 
 #: data/script/fcitx-diagnose.sh:952
 msgid "Cannot find pid of DBus name ${1} owner."
-msgstr ""
+msgstr "找不到 DBus 名稱 ${1} PID 的擁有者。"
 
 #: data/script/fcitx-diagnose.sh:1107
 msgid "Cannot find xim_server on root window."
@@ -530,11 +536,11 @@ msgstr "找不到拼音"
 msgid "Cannot interpret XMODIFIERS: ${1}."
 msgstr "無法解析 XMODIFIERS：${1}。"
 
-#: src/ui/classic/skin.c:121
+#: src/ui/classic/skin.c:125
 msgid "Cannot load default skin, is installation correct?"
 msgstr "無法載入預設佈景，安裝正確嗎？"
 
-#: src/ui/classic/skin.c:126
+#: src/ui/classic/skin.c:130
 #, c-format
 msgid "Cannot load skin %s, return to default"
 msgstr "無法載入佈景 %s，使用預設"
@@ -593,9 +599,13 @@ msgstr "選擇放在前面的字詞，Escape 鍵取消"
 msgid "Choose the phrase to clear typing history, Press Escape to Cancel"
 msgstr "選擇要清理輸入頻率的字詞，Escape 鍵取消"
 
-#: src/ui/classic/fcitx-classic-ui.conf.in:3
+#: skin/classic/fcitx_skin.conf.in:2 src/ui/classic/fcitx-classic-ui.conf.in:3
 msgid "Classic"
 msgstr "經典介面"
+
+#: skin/classic/fcitx_skin.conf.in:5
+msgid "Classic Skin"
+msgstr "經典皮膚"
 
 #: src/ui/classic/fcitx-classic-ui.conf.in:4
 msgid "Classic User Interface with Skin support"
@@ -734,14 +744,9 @@ msgstr "設定檔"
 msgid "Configuration:"
 msgstr "設定："
 
-#: src/module/notificationitem/dbusmenu.c:356 src/ui/classic/classicui.c:502
+#: src/module/notificationitem/dbusmenu.c:373 src/ui/classic/classicui.c:501
 msgid "Configure"
 msgstr "設定"
-
-#: src/module/notificationitem/dbusmenu.c:352 src/ui/classic/classicui.c:501
-#: src/ui/kimpanel/kimpanel.c:785
-msgid "Configure Current Input Method"
-msgstr "設定目前輸入法"
 
 #: src/lib/fcitx-config/fcitx-config.c:894
 #, c-format
@@ -830,7 +835,11 @@ msgstr "基於 DBus 的新 Freedesktop.org 系統匣圖示"
 msgid "DBus interface:"
 msgstr "DBus 介面："
 
-#: src/module/spell/fcitx-spell.desc:5
+#: skin/dark/fcitx_skin.conf.in:2 skin/dark/fcitx_skin.conf.in:5
+msgid "Dark"
+msgstr "暗色"
+
+#: skin/default/fcitx_skin.conf.in:2 src/module/spell/fcitx-spell.desc:5
 msgid "Default"
 msgstr "預設"
 
@@ -841,6 +850,10 @@ msgstr "預設輸入法狀態"
 #: src/im/pinyin/fcitx-pinyin.desc:13
 msgid "Default Shuangpin Schema"
 msgstr "預設雙拼方案"
+
+#: skin/default/fcitx_skin.conf.in:5
+msgid "Default Skin"
+msgstr "默認皮膚"
 
 #: src/module/spell/fcitx-spell.desc:11
 msgid "Default Spell Hint Backends Order"
@@ -891,7 +904,7 @@ msgstr "禁用拼音特殊符號"
 msgid "Disable addon %s, dependency %s cannot be satisfied."
 msgstr "停用附加元件 %s，無法滿足 %s 的相依性。"
 
-#: src/module/notificationitem/notificationitem.c:462
+#: src/module/notificationitem/notificationitem.c:460
 #: src/ui/kimpanel/kimpanel.c:282 src/ui/kimpanel/kimpanel.c:287
 #: data/config.desc:34
 msgid "Disabled"
@@ -927,16 +940,16 @@ msgstr "不顯示拼寫提示"
 msgid "Do not sort word with code less than this level"
 msgstr "比此級別短的碼不進行排序"
 
-#: src/lib/fcitx-utils/desktop-parse.c:602
+#: src/lib/fcitx-utils/desktop-parse.c:603
 #, c-format
 msgid "Duplicate entry %s in group %s,@ line %d, override previous one."
 msgstr "重複的內容 %s 於群組 %s 中，於第 %d 行，覆寫前一個。"
 
-#: src/lib/fcitx-utils/desktop-parse.c:562
+#: src/lib/fcitx-utils/desktop-parse.c:563
 #, c-format
 msgid ""
 "Duplicate group %s in a desktop file,@ line %d, merge with previous one."
-msgstr ""
+msgstr "desktop 檔案,@ 第 %d 行中有重複群組 %s，已與上一個合併。"
 
 #: src/lib/fcitx-config/fcitx-config.c:901
 #, c-format
@@ -1059,7 +1072,7 @@ msgstr "精確相符"
 msgid "Exec"
 msgstr "Exec"
 
-#: src/module/notificationitem/dbusmenu.c:371 src/ui/classic/classicui.c:504
+#: src/module/notificationitem/dbusmenu.c:388 src/ui/classic/classicui.c:503
 msgid "Exit"
 msgstr "離開"
 
@@ -1106,7 +1119,7 @@ msgstr "Fcitx DBus 前端"
 
 #: src/frontend/ipcportal/fcitx-ipcportal.conf.in:3
 msgid "Fcitx DBus Frontend (Portal version)"
-msgstr ""
+msgstr "Fcitx DBus 前端（Portal 版）"
 
 #: src/module/lua/fcitx-lua.conf.in:3
 msgid "Fcitx Lua Support"
@@ -1535,7 +1548,7 @@ msgstr "非使用中功能表項目的字體顏色"
 
 #: src/ui/classic/skin.desc:177
 msgid "Inactive Text Icon Color"
-msgstr ""
+msgstr "非使用中文字圖形顏色"
 
 #: data/config.desc:68
 msgid "Include Inactivate when scrolling between Input Method"
@@ -1561,7 +1574,7 @@ msgstr "輸入字型大小"
 msgid "Input Message Color"
 msgstr "輸入訊息顏色"
 
-#: src/lib/fcitx/ime.c:1695 src/module/notificationitem/notificationitem.c:411
+#: src/lib/fcitx/ime.c:1698 src/module/notificationitem/notificationitem.c:410
 #: data/fcitx-autostart.desktop.in:3 data/fcitx.desktop.in:3
 msgid "Input Method"
 msgstr "輸入法"
@@ -1570,7 +1583,7 @@ msgstr "輸入法"
 msgid "Input Method Configuration"
 msgstr "輸入法設定"
 
-#: src/module/notificationitem/notificationitem.c:463
+#: src/module/notificationitem/notificationitem.c:461
 #: src/ui/kimpanel/kimpanel.c:283 src/ui/kimpanel/kimpanel.c:288
 msgid "Input Method Disabled"
 msgstr "停用輸入法"
@@ -1587,7 +1600,7 @@ msgstr "輸入法相關環境變數："
 msgid "Input Methods:"
 msgstr "輸入法："
 
-#: src/lib/fcitx/ime.c:1797
+#: src/lib/fcitx/ime.c:1800
 msgid "Input Speed: "
 msgstr "輸入速度："
 
@@ -1618,12 +1631,12 @@ msgstr "無效的內容：第 %d 行缺少「=」"
 msgid "Invalid addon config file ${1}."
 msgstr "不正確的附加元件設定檔：${1}。"
 
-#: src/lib/fcitx-utils/desktop-parse.c:592
+#: src/lib/fcitx-utils/desktop-parse.c:593
 #, c-format
 msgid "Invalid entry line @ line %d %s"
 msgstr "無效的內容於行 %d %s"
 
-#: src/lib/fcitx-utils/desktop-parse.c:550
+#: src/lib/fcitx-utils/desktop-parse.c:551
 #, c-format
 msgid "Invalid group name line @ line %d %s"
 msgstr "非法組名出現在第 %d 行：%s"
@@ -1650,7 +1663,7 @@ msgstr "按鍵"
 
 #: src/ui/classic/skin.desc:416
 msgid "Key Color On Virtual Keyboard"
-msgstr ""
+msgstr "虛擬鍵盤的按鍵顏色"
 
 #: src/im/keyboard/keyboard.c:359 src/im/keyboard/keyboard.c:376
 #: src/im/keyboard/keyboard.c:424 src/im/keyboard/keyboard.c:437
@@ -1952,7 +1965,7 @@ msgstr "無可用輸入法"
 msgid "No available frontend"
 msgstr "無可用前端"
 
-#: src/module/notificationitem/notificationitem.c:456
+#: src/module/notificationitem/notificationitem.c:454
 #: src/ui/kimpanel/kimpanel.c:256 src/ui/kimpanel/kimpanel.c:257
 msgid "No input window"
 msgstr "沒有輸入視窗"
@@ -1965,7 +1978,7 @@ msgstr "沒有局部輸入法"
 msgid "No remind"
 msgstr "沒有聯想"
 
-#: src/lib/fcitx-utils/desktop-parse.c:586
+#: src/lib/fcitx-utils/desktop-parse.c:587
 #, c-format
 msgid "Non-comment doesn't belongs to any group @ %d %s"
 msgstr "不屬於任一群組的非註解出現在第 %d 行：%s"
@@ -1984,13 +1997,13 @@ msgstr "未設定"
 
 #: data/script/fcitx-diagnose.sh:682
 msgid "Note for GNOME Later than 3.6"
-msgstr ""
+msgstr "給 GNOME 3.6 以上版本的註記"
 
 #: src/module/vk/vk.c:57
 msgid "Number"
 msgstr "數字"
 
-#: src/module/notificationitem/dbusmenu.c:340 src/ui/classic/classicui.c:440
+#: src/module/notificationitem/dbusmenu.c:361 src/ui/classic/classicui.c:440
 msgid "Online Help"
 msgstr "線上說明"
 
@@ -2024,22 +2037,22 @@ msgstr "輸出"
 #: src/ui/classic/skin.desc:142 src/ui/classic/skin.desc:248
 #: src/ui/classic/skin.desc:378
 msgid "Overlay X offset"
-msgstr ""
+msgstr "覆蓋 X 位移"
 
 #: src/ui/classic/skin.desc:147 src/ui/classic/skin.desc:253
 #: src/ui/classic/skin.desc:383
 msgid "Overlay Y offset"
-msgstr ""
+msgstr "覆蓋 Y 位移"
 
 #: src/ui/classic/skin.desc:137 src/ui/classic/skin.desc:243
 #: src/ui/classic/skin.desc:373
 msgid "Overlay dock position"
-msgstr ""
+msgstr "覆蓋停駐區位置"
 
 #: src/ui/classic/skin.desc:122 src/ui/classic/skin.desc:228
 #: src/ui/classic/skin.desc:358
 msgid "Overlay image"
-msgstr ""
+msgstr "覆蓋圖片"
 
 #: src/ui/classic/fcitx-classic-ui.desc:18
 msgid "Override the skin font size"
@@ -2047,11 +2060,11 @@ msgstr "覆寫佈景字型大小"
 
 #: data/script/fcitx-diagnose.sh:940
 msgid "Owner of DBus name ${1} is ${2}."
-msgstr ""
+msgstr "DBus 名稱 ${1} 的擁有者是 ${2}。"
 
 #: data/script/fcitx-diagnose.sh:948
 msgid "PID of DBus name ${1} owner is ${2}."
-msgstr ""
+msgstr "DBus 名稱 ${1} PID 的擁有者是 ${2}。"
 
 #: data/inputmethod.desc:23
 msgid "Parent"
@@ -2134,11 +2147,11 @@ msgstr ""
 
 #: src/ui/classic/skin.desc:265
 msgid "Position or offset of LookupTable"
-msgstr ""
+msgstr "候選字表格的位置或位移"
 
 #: src/ui/classic/skin.desc:261
 msgid "Position or offset of Preedit"
-msgstr ""
+msgstr "預編輯區域的位置或位移"
 
 #: src/module/spell/fcitx-spell.desc:14
 msgid "Possible Providers: presage, custom, enchant (separate with comma)"
@@ -2330,8 +2343,8 @@ msgstr "右邊界寬度"
 msgid "Resize Margin Top"
 msgstr "上邊界寬度"
 
-#: src/module/notificationitem/dbusmenu.c:365 src/ui/classic/classicui.c:503
-#: src/ui/kimpanel/kimpanel.c:790
+#: src/module/notificationitem/dbusmenu.c:382 src/ui/classic/classicui.c:502
+#: src/ui/kimpanel/kimpanel.c:785
 msgid "Restart"
 msgstr "重新啟動"
 
@@ -2423,7 +2436,7 @@ msgstr "選擇以貼上"
 
 #: data/addon.desc:60
 msgid "Self"
-msgstr ""
+msgstr "自我提供"
 
 #: src/module/quickphrase/fcitx-quickphrase.desc:6
 msgid "Semicolon"
@@ -2488,20 +2501,16 @@ msgstr "雙拼"
 msgid "Simple Pinyin support for Fcitx"
 msgstr "Fcitx 簡單的拼音支援"
 
-#: src/module/chttrans/chttrans.c:151 src/module/chttrans/chttrans.c:197
-msgid "Simplified Chinese"
-msgstr "簡體中文"
-
-#: src/module/chttrans/chttrans.c:176
+#: src/module/chttrans/chttrans.c:177
 #: src/module/chttrans/fcitx-chttrans.conf.in:3
 msgid "Simplified Chinese To Traditional Chinese"
 msgstr "正簡轉換"
 
-#: src/module/chttrans/chttrans.c:178
+#: src/module/chttrans/chttrans.c:179
 msgid "Simplified Chinese is enabled."
 msgstr "已啟用簡體中文。"
 
-#: src/ui/classic/skin.c:687 src/ui/classic/fcitx-classic-ui.conf.in:10
+#: src/ui/classic/skin.c:708 src/ui/classic/fcitx-classic-ui.conf.in:10
 msgid "Skin"
 msgstr "佈景"
 
@@ -2548,7 +2557,7 @@ msgstr "緩衝區佈景"
 
 #: src/ui/classic/skin.desc:409 src/ui/classic/skin.desc:414
 msgid "SkinKeyboard"
-msgstr ""
+msgstr "鍵盤"
 
 #: src/ui/classic/skin.desc:67 src/ui/classic/skin.desc:71
 #: src/ui/classic/skin.desc:75 src/ui/classic/skin.desc:79
@@ -2574,7 +2583,7 @@ msgstr "主工具列佈景"
 #: src/ui/classic/skin.desc:389 src/ui/classic/skin.desc:393
 #: src/ui/classic/skin.desc:401
 msgid "SkinMenu"
-msgstr ""
+msgstr "佈景選單"
 
 #: src/ui/classic/skin.desc:307 src/ui/classic/skin.desc:311
 msgid "SkinTrayIcon"
@@ -2582,7 +2591,7 @@ msgstr "系統匣小圖示佈景"
 
 #: src/ui/classic/skin.desc:391
 msgid "Space Line Color"
-msgstr ""
+msgstr "空白線顏色"
 
 #: src/module/quickphrase/quickphrase.c:247
 #, c-format
@@ -2664,11 +2673,21 @@ msgstr "Super+右 Ctrl"
 
 #: data/config.desc:142
 msgid "Switch Embedded Preedit"
-msgstr ""
+msgstr "切換內嵌預編輯區域"
 
 #: data/config.desc:114
 msgid "Switch Full Width Punc Mode"
 msgstr "切換全形標點符號"
+
+#: src/module/chttrans/chttrans.c:151 src/module/chttrans/chttrans.c:197
+#: src/module/chttrans/chttrans.c:244
+msgid "Switch to Simplified Chinese"
+msgstr "切換至簡體中文"
+
+#: src/module/chttrans/chttrans.c:152 src/module/chttrans/chttrans.c:198
+#: src/module/chttrans/chttrans.c:245
+msgid "Switch to Traditional Chinese"
+msgstr "切換至正體中文"
 
 #: src/module/imselector/fcitx-imselector.desc:54
 #: src/module/imselector/fcitx-imselector.desc:99
@@ -2815,7 +2834,8 @@ msgstr "切換輸入法"
 msgid "Toggle Remind"
 msgstr "切換聯想"
 
-#: src/module/chttrans/chttrans.c:152 src/module/chttrans/chttrans.c:198
+#: src/module/chttrans/chttrans.c:153 src/module/chttrans/chttrans.c:199
+#: src/module/chttrans/chttrans.c:246
 msgid "Toggle Simp/Trad Chinese Conversion"
 msgstr "切換正簡轉換"
 
@@ -2850,15 +2870,11 @@ msgstr "左上"
 msgid "TopRight"
 msgstr "右上"
 
-#: src/module/chttrans/chttrans.c:151 src/module/chttrans/chttrans.c:196
-msgid "Traditional Chinese"
-msgstr "正體中文"
-
 #: src/module/chttrans/fcitx-chttrans.desc:6
 msgid "Traditional Chinese Translate Engine"
 msgstr "正簡轉換引擎"
 
-#: src/module/chttrans/chttrans.c:177
+#: src/module/chttrans/chttrans.c:178
 msgid "Traditional Chinese is enabled."
 msgstr "已啟用正體中文。"
 
@@ -2907,7 +2923,7 @@ msgstr "使用者介面：開啟 %s 失敗 %s"
 
 #: data/script/fcitx-diagnose.sh:956
 msgid "Unable to find a program to check dbus."
-msgstr ""
+msgstr "找不到用來檢查 dbus 的程式。"
 
 #: src/module/unicode/fcitx-unicode.desc:1
 msgid "Unicode"
@@ -2948,7 +2964,7 @@ msgstr "使用碼表中自訂的提示文字"
 
 #: src/ui/classic/skin.desc:167
 msgid "Use Custom text icon color"
-msgstr ""
+msgstr "使用自訂文字圖示顏色"
 
 #: data/profile.desc:2
 msgid "Use Full Width Character"
@@ -2964,7 +2980,7 @@ msgstr "使用模糊鍵"
 
 #: src/frontend/xim/fcitx-xim.desc:4
 msgid "Use On The Spot Style for XIM (Cannot change during running)"
-msgstr ""
+msgstr "對 XIM 使用 On The Spot 樣式（無法在執行時切換）"
 
 #: src/im/table/table.desc:39
 msgid "Use Pinyin"
@@ -3028,7 +3044,7 @@ msgstr "使用者詞彙顏色"
 
 #: data/script/fcitx-diagnose.sh:935
 msgid "Using ${1} to check dbus."
-msgstr ""
+msgstr "使用 ${1} 檢查 dbus。"
 
 #: data/script/fcitx-diagnose.sh:1294 data/script/fcitx-diagnose.sh:1377
 msgid "Version Line:"
@@ -3056,7 +3072,7 @@ msgstr "虛擬鍵盤"
 
 #: src/ui/classic/skin.desc:411
 msgid "Virtual Keyboard Image"
-msgstr ""
+msgstr "虛擬鍵盤圖片"
 
 #: src/module/vk/vk.c:154
 msgid "Virtual Keyboard State"
@@ -3263,7 +3279,7 @@ msgstr "可執行檔："
 msgid "here"
 msgstr "在此"
 
-#: src/lib/fcitx/ime.c:1803
+#: src/lib/fcitx/ime.c:1806
 msgid "min Num of Characters: "
 msgstr "分 字元數："
 
